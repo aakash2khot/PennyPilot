@@ -1,0 +1,59 @@
+pipeline{
+    agent any
+    environment {
+        CI = 'true'
+        registryfrontend = 'bsankapal/pennypilot-frontend'
+        registrybackend = 'bsankapal/pennypilot-backend'
+        registryCredential = 'DockerHubCred'
+        dockerimage = ''
+    }
+    stages{
+        stage('Stage 1: Git Clone'){
+            steps{
+                git url:'https://github.com/aakash2khot/PennyPilot.git',
+                branch: 'main'
+                // credentialsId: 'Credential_Git'
+            }
+        } 
+        stage('Build Frontend Docker Image') {
+            environment {
+                IMAGE_NAME = ''
+            }
+            steps {
+                script{
+                // docker = sh '/usr/local/bin/docker'
+                // dockerimage = docker.build registry + ":latest"
+                dir('frontend') {
+                    dockerimage = sh '/usr/local/bin/docker build -t '+registryfrontend+':latest .'
+                }
+            }
+        }
+        }
+        stage('Build Backend Docker Image') {
+            steps {
+                script{
+                dir('backend') {
+                    dockerimage = sh '/usr/local/bin/docker build -t '+registrybackend+':latest .'
+        } }
+        } 
+        }
+        stage('Push Frontend Image to dockerHub') {
+            steps {
+                script{
+                dir('frontend') {
+                    sh '/usr/local/bin/docker login -u "bsankapal" -p "xxxpassword"'
+                    sh '/usr/local/bin/docker push ' +registryfrontend+':latest'
+                }
+            } }
+        }
+        stage('Push Backend Image to dockerHub') {
+            steps {
+                script{
+                dir('backend') {
+                    sh '/usr/local/bin/docker login -u "bsankapal" -p "xxxpassword"'
+                    sh '/usr/local/bin/docker push ' +registrybackend+':latest'
+                } 
+            } } 
+        }
+    }
+}
