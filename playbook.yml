@@ -4,11 +4,11 @@
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
-    - name: Install Docker Compose
-      # become: true
-      apt:
-        name: docker-compose
-        state: present
+    # - name: Install Docker Compose
+    #   # become: true
+    #   apt:
+    #     name: docker-compose
+    #     state: present
     
     - name: Build and start containers
       command: /opt/homebrew/bin/docker-compose up -d
