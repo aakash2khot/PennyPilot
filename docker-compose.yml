@@ -1,10 +1,10 @@
 version: "3"
 services:
-  mymongodb:
-    container_name: mongo_service
-    image: 'mongo:7'
-    ports:
-      - 27017
+  # mymongodb:
+  #   container_name: mongo_service
+  #   image: 'mongo:7'
+  #   ports:
+  #     - 27017
   backend:
     # build:
     #   dockerfile: Dockerfile
