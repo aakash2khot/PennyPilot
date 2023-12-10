@@ -2,7 +2,7 @@
 - name: Deploying Project.
   hosts: all
   vars:
-    ansible_python_interpreter: /opt/homebrew/bin/python3
+    ansible_python_interpreter: /usr/bin/python3
   tasks:
     - name: Build and start containers
       command: "docker-compose up"
