@@ -12,7 +12,7 @@
     
     - name: Build and start containers
       command: "/opt/homebrew/bin/docker-compose up"
-       args:
+      args:
         chdir: ./
     # - name: Start docker service
     #   service:
