@@ -11,9 +11,7 @@
     #     state: present
     
     - name: Build and start containers
-      command: /opt/homebrew/bin/docker-compose up -d
-      args:
-        chdir: /Users/aakashkhot/Documents/IIITB_Sem7/PennyPilot/
+      command: "docker-compose up"
     # - name: Start docker service
     #   service:
     #     name: docker
