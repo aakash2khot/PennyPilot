@@ -1,16 +1,16 @@
 version: "3"
 services:
   mymongodb:
-    # container_name: mongo_service
-    image: mongo
+    container_name: mongo_service
+    image: 'mongo:7'
     ports:
-      - "27017:27017"
+      - 27017
   backend:
     # build:
     #   dockerfile: Dockerfile
     #   context: ./backend/
-    # container_name: backend
-    # restart: always
+    container_name: backend
+    restart: always
     image: ashkt/pennypilot-frontend
     ports:
       - "8082:8082"
@@ -24,10 +24,10 @@ services:
     # networks:
     #   - finance
   frontend:
-    # build:
-    #   dockerfile: dockerfile
-    #   context: ./frontend/
-    # container_name: frontend
+    build:
+      dockerfile: dockerfile
+      context: ./frontend/
+    container_name: frontend
     image: ashkt/pennypilot-backend
     ports:
       - "3000:3000"
