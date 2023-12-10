@@ -4,6 +4,11 @@
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
+    - name: Install Docker Compose
+      # become: true
+      apt:
+        name: docker-compose
+        state: present
     # - name: Install Docker Compose
     #   # become: true
     #   apt:
@@ -11,9 +16,9 @@
     #     state: present
     
     - name: Build and start containers
-      command: "/opt/homebrew/bin/docker-compose -f docker-compose.yml up"
+      command: docker-compose up -d"
       args:
-        chdir: ./
+        chdir: /Users/aakashkhot/Documents/IIITB_Sem7/PennyPilot/
     # - name: Start docker service
     #   service:
     #     name: docker
