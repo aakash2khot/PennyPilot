@@ -11,7 +11,7 @@
     #     state: present
     
     - name: Build and start containers
-      command: "/opt/homebrew/bin/docker-compose -f docker-compose.yml up"
+      command: "/opt/homebrew/bin/docker-compose -f /Users/aakashkhot/Documents/IIITB_Sem7/PennyPilot/docker-compose.yml up"
       args:
         chdir: ./
     # - name: Start docker service
