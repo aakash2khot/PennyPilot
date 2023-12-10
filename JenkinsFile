@@ -42,7 +42,7 @@ pipeline{
             steps {
                 script{
                 dir('frontend') {
-                    sh '/usr/local/bin/docker login -u "ashkt" -p "Aakash@123"'
+                    sh '/usr/local/bin/docker login -u "ashkt" -p "ppp"'
                     sh '/usr/local/bin/docker push ' +registryfrontend+':latest'
                 }
             } }
@@ -51,7 +51,7 @@ pipeline{
             steps {
                 script{
                 dir('backend') {
-                    sh '/usr/local/bin/docker login -u "ashkt" -p "Aakash@123"'
+                    sh '/usr/local/bin/docker login -u "ashkt" -p "ppp"'
                     sh '/usr/local/bin/docker push ' +registrybackend+':latest'
                 } 
             } } 
