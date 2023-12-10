@@ -9,10 +9,10 @@
     #   apt:
     #     name: docker-compose
     #     state: present
-    - name: install docker-compose
-      shell: pip install docker-compose
+    # - name: install docker-compose
+    #   shell: pip install docker-compose
     - name: Build and start containers
-      command: "/opt/homebrew/bin/docker-compose up"
+      command: "/opt/homebrew/bin/docker-compose -f docker-compose.yml up"
     # - name: Start docker service
     #   service:
     #     name: docker
