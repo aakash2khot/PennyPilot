@@ -12,7 +12,7 @@
     # - name: install docker-compose
     #   shell: pip install docker-compose
     - name: Build and start containers
-      command: "/opt/homebrew/bin/docker-compose -f docker-compose.yml up"
+      command: "/opt/homebrew/bin/docker-compose -f /Users/aakashkhot/Documents/IIITB_Sem7/PennyPilot/docker-compose.yml up"
     # - name: Start docker service
     #   service:
     #     name: docker
