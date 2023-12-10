@@ -28,6 +28,7 @@ services:
       dockerfile: dockerfile
       context: ./frontend/
     container_name: frontend
+    restart: always
     image: ashkt/pennypilot-backend
     ports:
       - "3000:3000"
