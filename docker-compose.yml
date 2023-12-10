@@ -6,9 +6,9 @@ services:
   #   ports:
   #     - 27017
   backend:
-    # build:
-    #   dockerfile: Dockerfile
-    #   context: ./backend/
+    build:
+      dockerfile: Dockerfile
+      context: ./backend/
     container_name: backend
     restart: always
     image: ashkt/pennypilot-frontend
