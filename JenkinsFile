@@ -51,7 +51,7 @@ pipeline{
             steps {
                 script{
                 dir('backend') {
-                    sh '/usr/local/bin/docker login -u "bsankapal" -p "Abc@12345"'
+                    sh '/usr/local/bin/docker login -u "ashkt" -p "Aakash@123"'
                     sh '/usr/local/bin/docker push ' +registrybackend+':latest'
                 } 
             } } 
