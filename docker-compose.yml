@@ -16,8 +16,8 @@ services:
       - "8082:8082"
     depends_on:
       - mymongodb
-    env_file:
-      - ./backend/.env
+    # env_file:
+    #   - ./backend/.env
     # volumes:
     #   - ./backend:/backend
     #   - /backend/node_modules
