@@ -11,7 +11,7 @@
         state: present
     
     - name: Build and start containers
-      command: docker-compose up -d"
+      command: docker-compose up -d
       args:
         chdir: /Users/aakashkhot/Documents/IIITB_Sem7/PennyPilot/
     # - name: Start docker service
