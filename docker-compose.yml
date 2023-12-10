@@ -14,8 +14,8 @@ services:
     image: ashkt/pennypilot-frontend
     ports:
       - "8082:8082"
-    depends_on:
-      - mymongodb
+    # depends_on:
+    #   - mymongodb
     env_file:
       - ./backend/.env
     # volumes:
