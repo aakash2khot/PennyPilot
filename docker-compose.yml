@@ -11,7 +11,7 @@ services:
       context: ./backend/
     container_name: backend
     restart: always
-    image: ashkt/pennypilot-frontend
+    image: ashkt/pennypilot-backend
     ports:
       - "8082:8082"
     # depends_on:
@@ -29,7 +29,7 @@ services:
       context: ./frontend/
     container_name: frontend
     restart: always
-    image: ashkt/pennypilot-backend
+    image: ashkt/pennypilot-frontend
     ports:
       - "3000:3000"
     # volumes:
