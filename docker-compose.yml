@@ -2,13 +2,14 @@ version: "3"
 services:
   mongodb:
     container_name: mongo_service
+    restart: always
     image: mongo:latest
     ports:
-      - 27017
-    environment:
-       MONGO_INITDB_ROOT_USERNAME: ash 
-       MONGO_INITDB_ROOT_PASSWORD: 123  
-       MONGO_INITDB_DATABASE: db
+      - "27017:27017"
+    # environment:
+    #    MONGO_INITDB_ROOT_USERNAME: ash 
+    #    MONGO_INITDB_ROOT_PASSWORD: 123  
+    #    MONGO_INITDB_DATABASE: db
   backend:
     build:
       dockerfile: Dockerfile
