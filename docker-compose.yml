@@ -23,6 +23,11 @@ services:
     #   - mongodb
     env_file:
       - ./backend/.env
+    volumes:
+      - ./backend:/backend
+      - /backend/node_modules
+    networks:
+      - finance
     # volumes:
     #   - ./backend:/backend
     #   - /backend/node_modules
@@ -42,8 +47,13 @@ services:
     #   - /frontend/node_modules
     # networks:
     #   - finance
+    volumes:
+      - ./frontend:/frontend
+      - /frontend/node_modules
+    networks:
+      - finance
     depends_on:
       - backend
-# networks:
-#   finance:
-#     driver: bridge
+networks:
+  finance:
+    driver: bridge
