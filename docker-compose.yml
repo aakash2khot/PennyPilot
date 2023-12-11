@@ -1,11 +1,11 @@
 version: "3"
 services:
-  # mongodb:
-  #   container_name: mongo_service
-  #   restart: always
-  #   image: mongo:latest
-  #   ports:
-  #     - "27017:27017"
+  mongodb:
+    container_name: mongo_service
+    # restart: always
+    image: mongo:7
+    ports:
+      - "27017:27017"
     # environment:
     #    MONGO_INITDB_ROOT_USERNAME: ash 
     #    MONGO_INITDB_ROOT_PASSWORD: 123  
