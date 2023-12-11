@@ -20,18 +20,18 @@ app.use(express.json());
 app.use(cors());
 // app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 
-//routes
-//user routes
-// app.use("/api/v1/users", require("./routes/userRoute"));
-// //transections routes
-// app.use("/api/v1/transections", require("./routes/transectionRoutes"));
+// routes
+// user routes
+app.use("/api/v1/users", require("./routes/userRoute"));
+//transections routes
+app.use("/api/v1/transections", require("./routes/transectionRoutes"));
 
 //static files
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+// app.use(express.static(path.join(__dirname, "../frontend/build")));
 
-app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
-});
+// app.get("*", function (req, res) {
+//   res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+// });
 
 //port
 const PORT = 8082 || process.env.PORT;
