@@ -2,7 +2,7 @@ version: "3"
 services:
   mongodb:
     container_name: mongo_service
-    # restart: always
+    restart: always
     image: mongo:7
     ports:
       - "27017:27017"
