@@ -84,8 +84,8 @@ const addTransection = async (req, res) => {
 };
 
 module.exports = {
-  getAllTrensaction,
-  addTrensaction,
-  editTrensaction,
-  deleteTrensaction,
+  getAllTransection,
+  addTransection,
+  editTransection,
+  deleteTransection,
 };
