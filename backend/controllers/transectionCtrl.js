@@ -1,10 +1,10 @@
-const transectionModel = require("../models/transectionModel");
+const transactionModel = require("../models/transectionModel");
 const moment = require("moment");
 const logger = require('../logger');
-const getAllTransection = async (req, res) => {
+const getAllTransaction = async (req, res) => {
   try {
     const { frequency, selectedDate, type } = req.body;
-    const transections = await transectionModel.find({
+    const transactions = await transactionModel.find({
       ...(frequency !== "custom"
         ? {
             date: {
@@ -28,9 +28,9 @@ const getAllTransection = async (req, res) => {
   }
 };
 
-const deleteTransection = async (req, res) => {
+const deleteTransaction = async (req, res) => {
   try {
-    await transectionModel.findOneAndDelete({ _id: req.body.transacationId });
+    await transactionModel.findOneAndDelete({ _id: req.body.transacationId });
     logger.info("Successful Deletion of Transaction");
     res.status(200).send("Transaction Deleted!");
   } catch (error) {
@@ -39,14 +39,21 @@ const deleteTransection = async (req, res) => {
     res.status(500).json(error);
   }
 };
-const editTransection = async (req, res) => {
+const editTransaction = async (req, res) => {
   try {
-    await transectionModel.findOneAndUpdate(
+    await transactionModel.findOneAndUpdate(
       { _id: req.body.transacationId },
       req.body.payload
     );
-    logger.info("Successful Edit of Transaction");
-    res.status(200).send("Edit SUccessfully");
+    logger.info(`Successful Edit of Transaction:
+                  User ID: ${newTransaction.userid}, 
+                  Amount: ${newTransaction.amount}, 
+                  Type: ${newTransaction.type}, 
+                  Category: ${newTransaction.category}, 
+                  Reference: ${newTransaction.reference}, 
+                  Description: ${newTransaction.description}, 
+                  Date: ${newTransaction.date}`);
+    res.status(200).send("Edit Successfully");
   } catch (error) {
     // console.log(error);
     logger.error(error);
@@ -54,13 +61,21 @@ const editTransection = async (req, res) => {
   }
 };
 
-const addTransection = async (req, res) => {
+const addTransaction = async (req, res) => {
   try {
     // const newTransection = new transectionModel(req.body);
-    const newTransection = new transectionModel(req.body);
-    await newTransection.save();
-    logger.info("Successfully Added Transaction");
-    res.status(201).send("Transection Created");
+    const newTransaction = new transactionModel(req.body);
+    await newTransaction.save();
+    // logger.info("Successfully Added Transaction");
+    logger.info(`Transaction created successfully: 
+                  User ID: ${newTransaction.userid}, 
+                  Amount: ${newTransaction.amount}, 
+                  Type: ${newTransaction.type}, 
+                  Category: ${newTransaction.category}, 
+                  Reference: ${newTransaction.reference}, 
+                  Description: ${newTransaction.description}, 
+                  Date: ${newTransaction.date}`);
+    res.status(201).send("Transaction Created");
   } catch (error) {
     // console.log(error);
     logger.error(error);
@@ -69,8 +84,8 @@ const addTransection = async (req, res) => {
 };
 
 module.exports = {
-  getAllTransection,
-  addTransection,
-  editTransection,
-  deleteTransection,
+  getAllTransaction,
+  addTransaction,
+  editTransaction,
+  deleteTransaction,
 };

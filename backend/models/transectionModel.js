@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
 
-const transectionSchema = new mongoose.Schema(
+const transactionSchema = new mongoose.Schema(
   {
     userid: {
       type: String,
@@ -17,7 +17,7 @@ const transectionSchema = new mongoose.Schema(
     },
     category: {
       type: String,
-      requires: [true, "cat is required"],
+      requires: [true, "category is required"],
     },
     refrence: {
       type: String,
@@ -34,5 +34,5 @@ const transectionSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const transectionModel = mongoose.model("transactions", transectionSchema);
-module.exports = transectionModel;
+const transactionModel = mongoose.model("transactions", transactionSchema);
+module.exports = transactionModel;
