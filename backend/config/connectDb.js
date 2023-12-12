@@ -5,7 +5,7 @@ const colors = require("colors");
 const connectDb = async () => {
   try {
     // await mongoose.connect(process.env.MONGO_URL);
-    await mongoose.connect("mongodb://mongodb:27017/PennyPilot", { useNewUrlParser: true, useUnifiedTopology: true });
+    await mongoose.connect("mongodb://mongo:27017/expenseApp");
     // await mongoose.connect("mongodb+srv://ash:123@cluster0.eioachd.mongodb.net/expenseApp")
     console.log(`Server Running On ${mongoose.connection.host}`.bgCyan.white);
   } catch (error) {
