@@ -3,7 +3,7 @@ services:
   mongo:
     container_name: mongo_service
     restart: always
-    image: mongo:latest
+    image: mongo:7
     ports:
       - '27017:27017'
     # environment:
@@ -11,9 +11,9 @@ services:
     #    MONGO_INITDB_ROOT_PASSWORD: 123  
     #    MONGO_INITDB_DATABASE: db
   backend:
-    build:
-      dockerfile: dockerfile
-      context: ./backend/
+    build: backend
+      # dockerfile: dockerfile
+      # context: ./backend/
     container_name: backend
     restart: always
     image: ashkt/pennypilot-backend
@@ -21,25 +21,25 @@ services:
       - '8082:8082'
     depends_on:
       - mongo
-    env_file:
-      - ./backend/.env
-    volumes:
-      - ./backend:/backend
-      - /backend/node_modules
+    # env_file:
+    #   - ./backend/.env
+    # volumes:
+    #   - ./backend:/backend
+    #   - /backend/node_modules
     networks:
       - finance
   frontend:
-    build:
-      dockerfile: dockerfile
-      context: ./frontend/
+    build: frontend
+      # dockerfile: dockerfile
+      # context: ./frontend/
     container_name: frontend
     restart: always
     image: ashkt/pennypilot-frontend
     ports:
       - '3000:3000'
-    volumes:
-      - ./frontend:/frontend
-      - /frontend/node_modules
+    # volumes:
+    #   - ./frontend:/frontend
+    #   - /frontend/node_modules
     networks:
       - finance
     depends_on:
