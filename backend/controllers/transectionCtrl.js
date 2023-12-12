@@ -1,7 +1,7 @@
 const transactionModel = require("../models/transectionModel");
 const moment = require("moment");
 const logger = require('../logger');
-const getAllTransaction = async (req, res) => {
+const getAllTransection = async (req, res) => {
   try {
     const { frequency, selectedDate, type } = req.body;
     const transactions = await transactionModel.find({
@@ -20,7 +20,7 @@ const getAllTransaction = async (req, res) => {
       userid: req.body.userid,
       ...(type !== "all" && { type }),
     });
-    res.status(200).json(transections);
+    res.status(200).json(transactions);
   } catch (error) {
     // console.log(error);
     logger.error(error);
@@ -28,7 +28,7 @@ const getAllTransaction = async (req, res) => {
   }
 };
 
-const deleteTransaction = async (req, res) => {
+const deleteTransection = async (req, res) => {
   try {
     await transactionModel.findOneAndDelete({ _id: req.body.transacationId });
     logger.info("Successful Deletion of Transaction");
@@ -39,7 +39,7 @@ const deleteTransaction = async (req, res) => {
     res.status(500).json(error);
   }
 };
-const editTransaction = async (req, res) => {
+const editTransection = async (req, res) => {
   try {
     await transactionModel.findOneAndUpdate(
       { _id: req.body.transacationId },
@@ -61,9 +61,9 @@ const editTransaction = async (req, res) => {
   }
 };
 
-const addTransaction = async (req, res) => {
+const addTransection = async (req, res) => {
   try {
-    // const newTransection = new transectionModel(req.body);
+    
     const newTransaction = new transactionModel(req.body);
     await newTransaction.save();
     // logger.info("Successfully Added Transaction");
@@ -84,8 +84,8 @@ const addTransaction = async (req, res) => {
 };
 
 module.exports = {
-  getAllTransaction,
-  addTransaction,
-  editTransaction,
-  deleteTransaction,
+  getAllTrensaction,
+  addTrensaction,
+  editTrensaction,
+  deleteTrensaction,
 };
