@@ -16,7 +16,7 @@ services:
     depends_on:
       - mongo
     volumes:
-      - ./logs.log:/usr/src/app/logs.log
+      - /Users/aakashkhot/Documents/IIITB_Sem7/PennyPilot/backend/logs.log:/usr/src/app/logs.log
     # env_file:
     #   - ./backend/.env
     # volumes:
