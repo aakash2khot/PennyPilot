@@ -12,7 +12,7 @@ services:
     #    MONGO_INITDB_DATABASE: db
   backend:
     build:
-      dockerfile: Dockerfile
+      dockerfile: dockerfile
       context: ./backend/
     container_name: backend
     restart: always
