@@ -1,5 +1,2 @@
--- [localhost]
--- 127.0.0.1 ansible_connection=local ansible_user=aakashkhot
 [remote]
 117.205.13.254 ansible_user=balajibabasahebsankapal
--- localhost ansible_user = aakashkhot
