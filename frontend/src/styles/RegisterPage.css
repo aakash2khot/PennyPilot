@@ -3,7 +3,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  background-image: url('background.jpeg'); /* Specify the correct path to your image */
+  background-size: cover; /* Adjust the background size as needed */
+  background-position: center; /* Adjust the background position as needed */
+}
+.register-page::before {
+  content: 'PennyPilot';
+  position: absolute;
+  background-color: rgb(34, 29, 29); /* Semi-transparent white background */
+  padding: 12px; /* Add padding for better readability */
+  border-radius: 10px; /* Add rounded corners */
+  top: 40px;
+  left: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  color:rgb(255, 255, 255); /* Adjust the color as needed */
+  font-family: 'Arial', sans-serif; /* Change the font family */
+  letter-spacing: 1px; /* Adjust letter spacing */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+  
 }
 .register-form {
   background-color: #fff;
