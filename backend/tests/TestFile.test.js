@@ -126,7 +126,7 @@ describe('Transaction', () => {
             description: 'Lunch',
             date: '2023-12-12',
           };
-          const response = await request.post(`/api/v1/transections/edit-transection`).send({ transacationId: updatedTransaction.userid ,payload: updatedTransaction}).expect(200);
+          const response = await request.post(`/api/v1/transections/edit-transection`).send( updatedTransaction).expect(200);
         },7000);
         
      
