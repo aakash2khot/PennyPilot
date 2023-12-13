@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const supertest = require('supertest')
-const { app, server } = require('../server')
+const app = require('../server')
 const Trans = require('../models/transectionModel')
 const User = require('../models/userModel')
 // const api = supertest(app)
@@ -141,6 +141,9 @@ describe('Transaction', () => {
           const response = await request.post('/api/v1/transections/delete-transection').send({ transacationId: invalidTransactionId }).expect(500);
         });
   
+      afterAll(() => {
+          mongoose.connection.close();
+      });
  
   });
-  afterAll(() => app.destroy());
+  
