@@ -141,9 +141,15 @@ describe('Transaction', () => {
           const response = await request.post('/api/v1/transections/delete-transection').send({ transacationId: invalidTransactionId }).expect(500);
         });
   
-      afterAll(() => {
-          mongoose.connection.close();
-      });
+    
  
   });
+  beforeAll(done => {
+    done()
+  })
   
+  afterAll(done => {
+    // Closing the DB connection allows Jest to exit successfully.
+    mongoose.connection.close()
+    done()
+  })
