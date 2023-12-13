@@ -64,3 +64,5 @@
 2023-12-13T13:55:44.644Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
 2023-12-13T14:09:52.087Z  info: Server is running on port 8082
 2023-12-13T14:09:52.090Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-12-13T14:14:05.383Z  info: Server is running on port 8082
+2023-12-13T14:14:05.384Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
