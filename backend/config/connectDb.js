@@ -9,11 +9,11 @@ const connectDb = async () => {
     await mongoose.connect("mongodb://mongo:27017/expenseApp");
     // await mongoose.connect("mongodb+srv://ash:123@cluster0.eioachd.mongodb.net/expenseApp");
     console.log(`Server Running On mongo --  ${mongoose.connection.host}`.bgCyan.white);
-    logger.info("Connected to Database");
+    logger.info("Connected to Mongo Database");
   } catch (error) {
     logger.error(error);
     console.log(`${error}`.bgRed);
-    console.log("not connectd to mongoose")
+    console.log("Connecting to Mongo Database Failed")
   }
 };
 

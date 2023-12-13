@@ -20,6 +20,7 @@ const getAllTransection = async (req, res) => {
       userid: req.body.userid,
       ...(type !== "all" && { type }),
     });
+    logger.info("Fetched all Transaction you have done!");
     res.status(200).json(transactions);
   } catch (error) {
     // console.log(error);
@@ -31,7 +32,7 @@ const getAllTransection = async (req, res) => {
 const deleteTransection = async (req, res) => {
   try {
     await transactionModel.findOneAndDelete({ _id: req.body.transacationId });
-    logger.info("Successful Deletion of Transaction");
+    logger.info(`Successful Deletion of Transaction of User ID: ${newTransaction.userid}`);
     res.status(200).send("Transaction Deleted!");
   } catch (error) {
     // console.log(error);
@@ -45,14 +46,7 @@ const editTransection = async (req, res) => {
       { _id: req.body.transacationId },
       req.body.payload
     );
-    logger.info(`Successful Edit of Transaction:
-                  User ID: ${newTransaction.userid}, 
-                  Amount: ${newTransaction.amount}, 
-                  Type: ${newTransaction.type}, 
-                  Category: ${newTransaction.category}, 
-                  Reference: ${newTransaction.reference}, 
-                  Description: ${newTransaction.description}, 
-                  Date: ${newTransaction.date}`);
+    logger.info(`Successful Edit of Transaction of User ID: ${newTransaction.userid}`);
     res.status(200).send("Edit Successfully");
   } catch (error) {
     // console.log(error);
@@ -67,14 +61,8 @@ const addTransection = async (req, res) => {
     const newTransaction = new transactionModel(req.body);
     await newTransaction.save();
     // logger.info("Successfully Added Transaction");
-    logger.info(`Transaction created successfully: 
-                  User ID: ${newTransaction.userid}, 
-                  Amount: ${newTransaction.amount}, 
-                  Type: ${newTransaction.type}, 
-                  Category: ${newTransaction.category}, 
-                  Reference: ${newTransaction.reference}, 
-                  Description: ${newTransaction.description}, 
-                  Date: ${newTransaction.date}`);
+    logger.info(`Transaction created successfully of Amount ${newTransaction.amount} as ${newTransaction.type}`); 
+                  
     res.status(201).send("Transaction Created");
   } catch (error) {
     // console.log(error);
