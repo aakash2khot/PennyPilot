@@ -5,9 +5,8 @@ mongoose.set('strictQuery', false);
 const colors = require("colors");
 const connectDb = async () => {
   try {
-    // await mongoose.connect(process.env.MONGO_URL);
-    await mongoose.connect("mongodb://mongo:27017/expenseApp");
-    // await mongoose.connect("mongodb+srv://ash:123@cluster0.eioachd.mongodb.net/expenseApp");
+    const URL = process.env.NODE_ENV === 'test' ? process.env.MONGO_TEST_URL : process.env.MONGO__URL
+    await mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true});
     console.log(`Server Running On mongo --  ${mongoose.connection.host}`.bgCyan.white);
     logger.info("Connected to Mongo Database");
   } catch (error) {

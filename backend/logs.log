@@ -17,3 +17,19 @@
 2023-12-12T17:08:49.263Z  error: E11000 duplicate key error collection: expenseApp.users index: email_1 dup key: { email: "aakash.khot02@gmail.com" }
 2023-12-12T17:09:10.646Z  info: User Found - Login Successful
 
+2023-12-13T09:16:18.584Z  info: Server is running on port 8082
+2023-12-13T09:16:22.992Z  info: Connected to Mongo Database
+2023-12-13T09:16:25.122Z  info: User Found - Login Successful
+2023-12-13T09:16:25.838Z  warn: User Not Found
+2023-12-13T09:16:26.070Z  warn: User Not Found
+2023-12-13T09:16:26.081Z  error: Client must be connected before running operations
+2023-12-13T09:16:26.087Z  error: Client must be connected before running operations
+2023-12-13T09:16:26.089Z  error: Client must be connected before running operations
+2023-12-13T09:35:59.340Z  info: Server is running on port 8082
+2023-12-13T09:36:01.723Z  info: Connected to Mongo Database
+2023-12-13T09:36:03.104Z  info: User Found - Login Successful
+2023-12-13T09:36:03.340Z  warn: User Not Found
+2023-12-13T09:36:03.569Z  warn: User Not Found
+2023-12-13T09:36:03.822Z  info: New User successfully Registered
+2023-12-13T09:36:04.059Z  error: E11000 duplicate key error collection: expenseApp.users index: email_1 dup key: { email: "test@gmail.com" }
+2023-12-13T09:36:04.285Z  error: E11000 duplicate key error collection: expenseApp.users index: email_1 dup key: { email: "test@gmail.com" }

@@ -15,8 +15,8 @@ const initialUsers = [
 ]
 
 const loginUser = {
-	'email': 'aksh@gmail.com',
-	'password': '09876'
+	'email': 'test@gmail.com',
+	'password': '123'
 }
 
 const usersInDb = async () => {
