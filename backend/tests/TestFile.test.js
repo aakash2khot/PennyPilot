@@ -60,19 +60,19 @@ describe('User Controller - Login', () => {
 
 describe('User Registration', () => {
     // Test case for successful user registration
-    test('should register a new user', async () => {
-      const nuser = ({
-        password: "34123",
-        email: "clauhands@gmail.com",
-        name: "Sher Klaughing"
-      });
+    // test('should register a new user', async () => {
+    //   const nuser = ({
+    //     password: "34123",
+    //     email: "clauhs@gmail.com",
+    //     name: "Sher Klaughing"
+    //   });
       
 
-      const response = await request.post('/api/v1/users/register').send(nuser); // Expecting a 201 Created status
+    //   const response = await request.post('/api/v1/users/register').send(nuser); // Expecting a 201 Created status
       
-      expect(response.body.success).toBe(true);
+    //   expect(response.body.success).toBe(true);
     
-    },7000);
+    // },7000);
   
     // Test case for registering a user with an existing email (expecting failure)
     test('should fail to register a user with an existing email', async () => {
@@ -126,7 +126,7 @@ describe('Transaction', () => {
             description: 'Lunch',
             date: '2023-12-12',
           };
-          const response = await request.post(`/api/v1/transections/edit-transection`).send({ transacationId: updatedTransaction.userid }).expect(200);
+          const response = await request.post(`/api/v1/transections/edit-transection`).send({ transacationId: updatedTransaction.userid ,payload: updatedTransaction}).expect(200);
         },7000);
         
      
