@@ -66,3 +66,15 @@
 2023-12-13T14:09:52.090Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
 2023-12-13T14:14:05.383Z  info: Server is running on port 8082
 2023-12-13T14:14:05.384Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2023-12-13T14:17:58.003Z  info: Server is running on port 8082
+2023-12-13T14:17:58.015Z  info: Connected to Mongo Database
+2023-12-13T14:22:40.635Z  info: New User successfully Registered
+2023-12-13T14:22:49.569Z  info: User Found - Login Successful
+2023-12-13T14:22:49.639Z  info: Fetched all Transaction you have done!
+2023-12-13T14:22:49.642Z  info: Fetched all Transaction you have done!
+2023-12-13T14:22:52.780Z  info: Fetched all Transaction you have done!
+2023-12-13T14:23:07.376Z  info: Transaction created successfully of Amount 12 as expense
+2023-12-13T14:23:13.510Z  info: Fetched all Transaction you have done!
+2023-12-13T14:23:13.514Z  info: Fetched all Transaction you have done!
+2023-12-13T15:53:25.123Z  info: Server is running on port 8082
+2023-12-13T15:53:25.131Z  info: Connected to Mongo Database
