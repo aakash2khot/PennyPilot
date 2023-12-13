@@ -58,3 +58,7 @@
 2023-12-13T10:22:46.777Z  error: Client must be connected before running operations
 2023-12-13T10:22:46.780Z  error: Client must be connected before running operations
 2023-12-13T10:22:56.921Z  error: Operation `transections.insertOne()` buffering timed out after 10000ms
+2023-12-13T13:51:01.761Z  info: Server is running on port 8082
+2023-12-13T13:51:02.272Z  info: Connected to Database
+2023-12-13T13:55:44.641Z  info: Server is running on port 8082
+2023-12-13T13:55:44.644Z  error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
