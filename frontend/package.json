@@ -1,5 +1,5 @@
 {
-  "proxy": "https://ppbackend-x5rf.onrender.com",
+  "proxy": "http://host.docker.internal:8082",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
