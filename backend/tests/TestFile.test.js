@@ -141,12 +141,6 @@ describe('Transaction', () => {
           const response = await request.post('/api/v1/transections/delete-transection').send({ transacationId: invalidTransactionId }).expect(500);
         });
   
-      afterAll(() => {
-          mongoose.connection.close();
-      });
-      afterAll((done) => {
-        server.close(done);
-      });
  
   });
-  
+  afterAll(() => app.destroy());
