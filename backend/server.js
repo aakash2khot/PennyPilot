@@ -11,7 +11,6 @@ dotenv.config();
 
 //databse call
 connectDb();
-console.log("hi");
 //rest object
 const app = express();
 
