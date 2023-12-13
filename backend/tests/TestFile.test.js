@@ -63,8 +63,8 @@ describe('User Registration', () => {
     test('should register a new user', async () => {
       const nuser = ({
         password: "34123",
-        email: "clapyourhands@gmail.com",
-        name: "Sherifff Klaughing"
+        email: "clauhands@gmail.com",
+        name: "Sher Klaughing"
       });
       
 
@@ -103,7 +103,7 @@ describe('Transaction', () => {
 
     test('should add a new transaction', async () => {
       const newTransaction = {
-        userid: 'balajiagain1',
+        userid: 'balajiagai',
         amount: 100,
         type: 'expense',
         category: 'food',
@@ -118,7 +118,7 @@ describe('Transaction', () => {
   
         test('should edit an existing transaction', async () => {
           const updatedTransaction = {
-            userid: 'balajiagain1',
+            userid: 'balajiagain',
             amount: 100,
             type: 'expense',
             category: 'tip',
