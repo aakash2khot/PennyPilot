@@ -144,4 +144,8 @@ describe('Transaction', () => {
       afterAll(() => {
           mongoose.connection.close();
       });
+      afterAll((done) => {
+        app.close(done);
+      });
   });
+  
