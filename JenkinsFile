@@ -1,5 +1,6 @@
 pipeline{
     agent any
+    tools {nodejs "nodejs"}
     environment {
         CI = 'true'
         registryfrontend = 'ashkt/pennypilot-frontend'
@@ -8,6 +9,7 @@ pipeline{
         registryCredential = 'DockerHubCred'
         dockerimage = ''
     }
+    
     stages{
         stage('Stage 1: Git Clone'){
             steps{
@@ -15,7 +17,20 @@ pipeline{
                 branch: 'main'
                 // credentialsId: 'Credential_Git'
             }
-        } 
+        }
+        stage("Running backend Tests"){
+            steps{
+                script{
+                dir('backend') {
+                    sh 'npm install'
+                    sh 'npm install'
+                    sh 'npm run test'
+                    sh 'kill $(lsof -t -i:8082)'
+                }
+                }
+                
+            }
+        }
         stage('Build Frontend Docker Image') {
             environment {
                 IMAGE_NAME = ''
@@ -56,13 +71,19 @@ pipeline{
                 } 
             } } 
         }
+        stage('Clean docker images'){
+        steps{
+            script{
+                sh '/usr/local/bin/docker container prune -f'
+                sh '/usr/local/bin/docker image prune -f'
+               }
+           }  
+        }
         stage('Deploy') {
         steps {
 
-            sh '/opt/homebrew/bin/ansible-playbook playbook.yml -i inventory'
-            // ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'inventory',
-            //  playbook: 'playbook.yml', sudoUser: null, extras: '-e "image_name=gaparul/scientific-calculator-react"'
-        }
+            sh '/Users/aakashkhot/Library/Python/3.12/bin/ansible-playbook playbook.yml -i inventory'
+           
         }
     }
 }

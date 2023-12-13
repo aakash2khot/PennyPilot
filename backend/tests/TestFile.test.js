@@ -18,8 +18,8 @@ beforeEach(async () => {
 describe('User Controller - Login', () => {
     test('should log in a user with valid credentials', async () => {
       const userCredentials = {
-        email: "Balaji.Sankapal@iiitb.ac.in",
-        password: "12345"
+        email: "test@gmail.com",
+        password: "123"
       };
   
       const response = await request.post('/api/v1/users/login').send(userCredentials);
@@ -118,10 +118,10 @@ describe('Transaction', () => {
   
         test('should edit an existing transaction', async () => {
           const updatedTransaction = {
-            userid: 'balajiagain',
-            amount: 900,
-            type: 'expenseFood',
-            category: 'food',
+            userid: 'balajiagain1',
+            amount: 100,
+            type: 'expense',
+            category: 'tip',
             refrence: '123',
             description: 'Lunch',
             date: '2023-12-12',
