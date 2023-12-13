@@ -32,7 +32,7 @@ const getAllTransection = async (req, res) => {
 const deleteTransection = async (req, res) => {
   try {
     await transactionModel.findOneAndDelete({ _id: req.body.transacationId });
-    logger.info(`Successful Deletion of Transaction of User ID: ${newTransaction.userid}`);
+    // logger.info(`Successful Deletion of Transaction of User ID: ${newTransaction.userid}`);
     res.status(200).send("Transaction Deleted!");
   } catch (error) {
     // console.log(error);
@@ -46,7 +46,7 @@ const editTransection = async (req, res) => {
       { _id: req.body.transacationId },
       req.body.payload
     );
-    logger.info(`Successful Edit of Transaction of User ID: ${newTransaction.userid}`);
+    // logger.info(`Successful Edit of Transaction of User ID: ${newTransaction.userid}`);
     res.status(200).send("Edit Successfully");
   } catch (error) {
     // console.log(error);
