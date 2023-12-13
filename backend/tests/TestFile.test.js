@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const supertest = require('supertest')
-const app = require('../server')
+const { app, server } = require('../server')
 const Trans = require('../models/transectionModel')
 const User = require('../models/userModel')
 // const api = supertest(app)
@@ -143,6 +143,9 @@ describe('Transaction', () => {
   
       afterAll(() => {
           mongoose.connection.close();
+      });
+      afterAll((done) => {
+        server.close(done);
       });
  
   });
