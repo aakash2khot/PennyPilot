@@ -23,7 +23,6 @@ pipeline{
                 script{
                 dir('backend') {
                     sh 'npm install'
-                    sh 'npm install'
                     sh 'npm run test'
                     sh 'kill $(lsof -t -i:8082)'
                 }
