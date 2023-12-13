@@ -149,6 +149,7 @@ describe('Transaction', () => {
   })
   
   afterAll(done => {
+    knex.destroy()
     // Closing the DB connection allows Jest to exit successfully.
     mongoose.connection.close()
     done()
