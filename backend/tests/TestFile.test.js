@@ -63,7 +63,7 @@ describe('User Registration', () => {
       const nuser = ({
         password: "34123",
         email: "css@gmail.com",
-        name: "Sheruu Klaughing"
+        name: "klaus michalson"
       });
       
 
