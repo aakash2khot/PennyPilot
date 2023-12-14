@@ -4,8 +4,6 @@ const {server,app} = require('../server')
 
 const Trans = require('../models/transectionModel')
 const User = require('../models/userModel')
-// const api = supertest(app)
-// const helper = require('./helperTest')
 
 const request = supertest(app);
 
@@ -61,19 +59,19 @@ describe('User Controller - Login', () => {
 
 describe('User Registration', () => {
     // Test case for successful user registration
-    // test('should register a new user', async () => {
-    //   const nuser = ({
-    //     password: "34123",
-    //     email: "clauhs@gmail.com",
-    //     name: "Sher Klaughing"
-    //   });
+    test('should register a new user', async () => {
+      const nuser = ({
+        password: "34123",
+        email: "csss@gmail.com",
+        name: "Sher Klaughing"
+      });
       
 
-    //   const response = await request.post('/api/v1/users/register').send(nuser); // Expecting a 201 Created status
+      const response = await request.post('/api/v1/users/register').send(nuser); // Expecting a 201 Created status
       
-    //   expect(response.body.success).toBe(true);
+      expect(response.body.success).toBe(true);
     
-    // },7000);
+    },7000);
   
     // Test case for registering a user with an existing email (expecting failure)
     test('should fail to register a user with an existing email', async () => {
