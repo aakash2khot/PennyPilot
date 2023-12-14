@@ -228,3 +228,7 @@
 2023-12-14T16:07:15.795Z  info: Successful Deletion of Transaction
 2023-12-14T16:07:18.916Z  info: Fetched all Transaction you have done!
 2023-12-14T16:07:18.920Z  info: Fetched all Transaction you have done!
+2023-12-14T16:13:58.868Z  info: Server is running on port 8082
+2023-12-14T16:13:58.876Z  info: Connected to Mongo Database
+2023-12-14T16:14:13.559Z  info: Fetched all Transaction you have done!
+2023-12-14T16:14:13.562Z  info: Fetched all Transaction you have done!
