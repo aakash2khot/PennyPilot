@@ -170,3 +170,35 @@
 2023-12-14T09:31:38.814Z  info: Connected to Mongo Database
 2023-12-14T09:53:58.101Z  info: Server is running on port 8082
 2023-12-14T09:53:58.108Z  info: Connected to Mongo Database
+2023-12-14T12:46:29.404Z  info: Server is running on port 8082
+2023-12-14T12:46:29.414Z  info: Connected to Mongo Database
+2023-12-14T12:46:54.741Z  info: New User successfully Registered
+2023-12-14T12:47:11.867Z  info: User Found - Login Successful
+2023-12-14T12:47:11.924Z  info: Fetched all Transaction you have done!
+2023-12-14T12:47:11.925Z  info: Fetched all Transaction you have done!
+2023-12-14T12:47:21.158Z  info: Fetched all Transaction you have done!
+2023-12-14T12:47:58.680Z  info: Transaction created successfully of Amount 12 as expense
+2023-12-14T12:48:02.208Z  info: Fetched all Transaction you have done!
+2023-12-14T12:48:02.220Z  info: Fetched all Transaction you have done!
+2023-12-14T12:48:11.801Z  info: Fetched all Transaction you have done!
+2023-12-14T12:48:11.802Z  info: Fetched all Transaction you have done!
+2023-12-14T12:48:22.674Z  info: Fetched all Transaction you have done!
+2023-12-14T12:48:24.356Z  info: Fetched all Transaction you have done!
+2023-12-14T12:48:46.439Z  info: Transaction created successfully of Amount 12 as income
+2023-12-14T12:48:49.275Z  info: Fetched all Transaction you have done!
+2023-12-14T12:48:49.280Z  info: Fetched all Transaction you have done!
+2023-12-14T12:49:05.787Z  info: Transaction created successfully of Amount 100 as expense
+2023-12-14T12:49:07.692Z  info: Fetched all Transaction you have done!
+2023-12-14T12:49:07.697Z  info: Fetched all Transaction you have done!
+2023-12-14T12:49:39.688Z  info: Transaction created successfully of Amount 30 as income
+2023-12-14T12:49:40.961Z  info: Fetched all Transaction you have done!
+2023-12-14T12:49:40.968Z  info: Fetched all Transaction you have done!
+2023-12-14T12:52:11.866Z  info: Fetched all Transaction you have done!
+2023-12-14T12:52:16.510Z  info: Fetched all Transaction you have done!
+2023-12-14T12:52:20.205Z  info: Fetched all Transaction you have done!
+2023-12-14T12:52:36.312Z  info: Transaction created successfully of Amount 111 as income
+2023-12-14T12:52:38.486Z  info: Fetched all Transaction you have done!
+2023-12-14T12:52:38.488Z  info: Fetched all Transaction you have done!
+2023-12-14T12:54:40.284Z  info: User Found - Login Successful
+2023-12-14T12:54:40.313Z  info: Fetched all Transaction you have done!
+2023-12-14T12:54:40.315Z  info: Fetched all Transaction you have done!
