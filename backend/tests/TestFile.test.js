@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const supertest = require('supertest')
-const {ser,app} = require('../server')
+const {server,app} = require('../server')
 
 const Trans = require('../models/transectionModel')
 const User = require('../models/userModel')
@@ -151,7 +151,7 @@ describe('Transaction', () => {
   
   afterAll(() => {
     // Closing the DB connection allows Jest to exit successfully.
-    ser.server.close();
+    server.close();
     mongoose.connection.close()
     // done()
   })
