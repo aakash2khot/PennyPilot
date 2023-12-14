@@ -1,6 +1,7 @@
 ---
 - name: Deploying Project.
   hosts: localhost
+  # For remote access 
   # hosts: remote
   vars:
     ansible_python_interpreter: /usr/local/bin/python3
