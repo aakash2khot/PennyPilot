@@ -145,9 +145,6 @@ describe('Transaction', () => {
     
  
   });
-  beforeAll(done => {
-    done()
-  })
   
   afterAll(() => {
     // Closing the DB connection allows Jest to exit successfully.
