@@ -16,7 +16,6 @@
 2023-12-12T17:08:40.023Z  info: New User successfully Registered
 2023-12-12T17:08:49.263Z  error: E11000 duplicate key error collection: expenseApp.users index: email_1 dup key: { email: "aakash.khot02@gmail.com" }
 2023-12-12T17:09:10.646Z  info: User Found - Login Successful
-
 2023-12-13T09:16:18.584Z  info: Server is running on port 8082
 2023-12-13T09:16:22.992Z  info: Connected to Mongo Database
 2023-12-13T09:16:25.122Z  info: User Found - Login Successful
@@ -86,3 +85,18 @@
 2023-12-14T03:32:25.460Z  info: Connected to Mongo Database
 2023-12-14T03:33:13.487Z  info: Server is running on port 8082
 2023-12-14T03:33:14.001Z  info: Connected to Mongo Database
+2023-12-14T03:38:56.307Z  info: Server is running on port 8082
+2023-12-14T03:38:56.314Z  info: Connected to Mongo Database
+2023-12-14T03:39:32.336Z  info: Fetched all Transaction you have done!
+2023-12-14T03:39:32.341Z  info: Fetched all Transaction you have done!
+2023-12-14T03:39:40.428Z  info: User Found - Login Successful
+2023-12-14T03:39:40.456Z  info: Fetched all Transaction you have done!
+2023-12-14T03:39:40.457Z  info: Fetched all Transaction you have done!
+2023-12-14T03:41:41.271Z  info: New User successfully Registered
+2023-12-14T03:43:12.974Z  info: User Found - Login Successful
+2023-12-14T03:43:13.010Z  info: Fetched all Transaction you have done!
+2023-12-14T03:43:13.011Z  info: Fetched all Transaction you have done!
+2023-12-14T03:43:15.551Z  info: Fetched all Transaction you have done!
+2023-12-14T03:43:30.346Z  info: Transaction created successfully of Amount 30 as income
+2023-12-14T03:43:32.536Z  info: Fetched all Transaction you have done!
+2023-12-14T03:43:32.539Z  info: Fetched all Transaction you have done!
