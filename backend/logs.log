@@ -210,3 +210,21 @@
 2023-12-14T14:46:25.216Z  info: User Found - Login Successful
 2023-12-14T14:46:25.249Z  info: Fetched all Transaction you have done!
 2023-12-14T14:46:25.250Z  info: Fetched all Transaction you have done!
+2023-12-14T16:03:45.561Z  info: Server is running on port 8082
+2023-12-14T16:03:46.593Z  info: Connected to Mongo Database
+2023-12-14T16:05:21.583Z  info: New User successfully Registered
+2023-12-14T16:05:25.688Z  info: User Found - Login Successful
+2023-12-14T16:05:25.748Z  info: Fetched all Transaction you have done!
+2023-12-14T16:05:25.749Z  info: Fetched all Transaction you have done!
+2023-12-14T16:05:49.674Z  info: Transaction created successfully
+2023-12-14T16:05:54.644Z  info: Fetched all Transaction you have done!
+2023-12-14T16:05:54.657Z  info: Fetched all Transaction you have done!
+2023-12-14T16:06:13.107Z  info: Transaction created successfully
+2023-12-14T16:06:14.472Z  info: Fetched all Transaction you have done!
+2023-12-14T16:06:14.475Z  info: Fetched all Transaction you have done!
+2023-12-14T16:06:40.968Z  info: Fetched all Transaction you have done!
+2023-12-14T16:06:40.972Z  info: Fetched all Transaction you have done!
+2023-12-14T16:07:01.764Z  info: Fetched all Transaction you have done!
+2023-12-14T16:07:15.795Z  info: Successful Deletion of Transaction
+2023-12-14T16:07:18.916Z  info: Fetched all Transaction you have done!
+2023-12-14T16:07:18.920Z  info: Fetched all Transaction you have done!
