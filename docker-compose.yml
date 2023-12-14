@@ -1,9 +1,5 @@
 version: '3'
 services:
-    # environment:
-    #    MONGO_INITDB_ROOT_USERNAME: ash 
-    #    MONGO_INITDB_ROOT_PASSWORD: 123  
-    #    MONGO_INITDB_DATABASE: db
   backend:
     build: backend
       # dockerfile: dockerfile
@@ -34,8 +30,6 @@ services:
       - finance
   frontend:
     build: frontend
-      # dockerfile: dockerfile
-      # context: ./frontend/
     container_name: frontend
     restart: always
     image: ashkt/pennypilot-frontend

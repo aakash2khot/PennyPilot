@@ -100,3 +100,5 @@
 2023-12-14T03:43:30.346Z  info: Transaction created successfully of Amount 30 as income
 2023-12-14T03:43:32.536Z  info: Fetched all Transaction you have done!
 2023-12-14T03:43:32.539Z  info: Fetched all Transaction you have done!
+2023-12-14T05:18:43.736Z  info: Server is running on port 8082
+2023-12-14T05:18:43.743Z  info: Connected to Mongo Database
