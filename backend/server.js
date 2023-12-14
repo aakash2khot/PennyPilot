@@ -37,7 +37,7 @@ app.use("/api/v1/transections", require("./routes/transectionRoutes"));
 const PORT = 8082 || process.env.PORT;
 
 //listen server
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   // console.log(`Server running on port ${PORT}`);
   logger.info("Server is running on port " + PORT);
 });
