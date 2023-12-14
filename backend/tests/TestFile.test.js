@@ -62,7 +62,7 @@ describe('User Registration', () => {
     test('should register a new user', async () => {
       const nuser = ({
         password: "34123",
-        email: "csss@gmail.com",
+        email: "css@gmail.com",
         name: "Sher Klaughing"
       });
       
