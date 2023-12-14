@@ -204,3 +204,9 @@
 2023-12-14T12:54:40.315Z  info: Fetched all Transaction you have done!
 2023-12-14T13:17:46.244Z  info: Server is running on port 8082
 2023-12-14T13:17:46.253Z  info: Connected to Mongo Database
+2023-12-14T14:46:01.349Z  info: Server is running on port 8082
+2023-12-14T14:46:01.357Z  info: Connected to Mongo Database
+2023-12-14T14:46:19.403Z  info: New User successfully Registered
+2023-12-14T14:46:25.216Z  info: User Found - Login Successful
+2023-12-14T14:46:25.249Z  info: Fetched all Transaction you have done!
+2023-12-14T14:46:25.250Z  info: Fetched all Transaction you have done!
