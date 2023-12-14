@@ -139,8 +139,9 @@ const HomePage = () => {
 
   return (
     <Layout>
+      <div id="midd">
       {loading && <Spinner />}
-      <div className="filters">
+      <div className="filters" style={{ backgroundColor: "#fff" }}>
         <div>
           <h6>Select Frequency</h6>
           <Select value={frequency} onChange={(values) => setFrequency(values)}>
@@ -244,6 +245,7 @@ const HomePage = () => {
           </div>
         </Form>
       </Modal>
+      </div>
     </Layout>
   );
 };

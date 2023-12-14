@@ -102,3 +102,67 @@
 2023-12-14T03:43:32.539Z  info: Fetched all Transaction you have done!
 2023-12-14T05:18:43.736Z  info: Server is running on port 8082
 2023-12-14T05:18:43.743Z  info: Connected to Mongo Database
+2023-12-14T06:31:52.438Z  info: User Found - Login Successful
+2023-12-14T06:31:52.512Z  info: Fetched all Transaction you have done!
+2023-12-14T06:31:52.513Z  info: Fetched all Transaction you have done!
+2023-12-14T07:11:26.054Z  info: Server is running on port 8082
+2023-12-14T07:11:56.044Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-14T07:13:14.059Z  info: Server is running on port 8082
+2023-12-14T07:13:44.051Z  error: getaddrinfo ENOTFOUND mongo
+2023-12-14T07:13:45.935Z  error: Operation `users.findOne()` buffering timed out after 10000ms
+2023-12-14T07:14:23.159Z  info: Server is running on port 8082
+2023-12-14T07:14:25.926Z  info: Connected to Mongo Database
+2023-12-14T07:14:32.822Z  warn: User Not Found
+2023-12-14T07:14:48.283Z  info: User Found - Login Successful
+2023-12-14T07:14:48.579Z  info: Fetched all Transaction you have done!
+2023-12-14T07:14:48.582Z  info: Fetched all Transaction you have done!
+2023-12-14T07:25:40.630Z  info: Fetched all Transaction you have done!
+2023-12-14T07:25:40.635Z  info: Fetched all Transaction you have done!
+2023-12-14T07:25:54.242Z  info: Fetched all Transaction you have done!
+2023-12-14T07:25:54.248Z  info: Fetched all Transaction you have done!
+2023-12-14T08:22:20.342Z  info: Fetched all Transaction you have done!
+2023-12-14T08:22:20.422Z  info: Fetched all Transaction you have done!
+2023-12-14T08:22:51.966Z  info: Fetched all Transaction you have done!
+2023-12-14T08:22:51.970Z  info: Fetched all Transaction you have done!
+2023-12-14T08:26:20.117Z  info: Fetched all Transaction you have done!
+2023-12-14T08:26:20.129Z  info: Fetched all Transaction you have done!
+2023-12-14T08:53:55.271Z  info: Fetched all Transaction you have done!
+2023-12-14T08:53:55.275Z  info: Fetched all Transaction you have done!
+2023-12-14T08:55:46.756Z  info: Fetched all Transaction you have done!
+2023-12-14T08:55:51.632Z  info: Fetched all Transaction you have done!
+2023-12-14T08:56:05.552Z  info: Fetched all Transaction you have done!
+2023-12-14T08:57:01.573Z  info: Fetched all Transaction you have done!
+2023-12-14T08:57:34.538Z  info: Fetched all Transaction you have done!
+2023-12-14T09:01:13.565Z  info: Fetched all Transaction you have done!
+2023-12-14T09:01:13.582Z  info: Fetched all Transaction you have done!
+2023-12-14T09:05:29.346Z  info: Fetched all Transaction you have done!
+2023-12-14T09:05:29.363Z  info: Fetched all Transaction you have done!
+2023-12-14T09:10:07.329Z  info: Fetched all Transaction you have done!
+2023-12-14T09:10:19.472Z  info: Fetched all Transaction you have done!
+2023-12-14T09:15:56.063Z  info: Fetched all Transaction you have done!
+2023-12-14T09:16:02.249Z  info: Fetched all Transaction you have done!
+2023-12-14T09:16:19.992Z  info: Fetched all Transaction you have done!
+2023-12-14T09:16:44.114Z  info: Fetched all Transaction you have done!
+2023-12-14T09:16:48.323Z  info: Fetched all Transaction you have done!
+2023-12-14T09:16:50.403Z  info: Fetched all Transaction you have done!
+2023-12-14T09:17:38.437Z  info: Fetched all Transaction you have done!
+2023-12-14T09:21:28.611Z  error: transections validation failed: amount: Cast to Number failed for value "w" (type string) at path "amount"
+2023-12-14T09:21:37.214Z  info: Transaction created successfully of Amount 11 as expense
+2023-12-14T09:21:40.153Z  info: Fetched all Transaction you have done!
+2023-12-14T09:21:40.155Z  info: Fetched all Transaction you have done!
+2023-12-14T09:21:47.504Z  info: Fetched all Transaction you have done!
+2023-12-14T09:21:50.849Z  info: Fetched all Transaction you have done!
+2023-12-14T09:21:53.131Z  info: Fetched all Transaction you have done!
+2023-12-14T09:21:55.431Z  info: Fetched all Transaction you have done!
+2023-12-14T09:22:07.895Z  info: Transaction created successfully of Amount 30 as expense
+2023-12-14T09:22:10.438Z  info: Fetched all Transaction you have done!
+2023-12-14T09:22:10.440Z  info: Fetched all Transaction you have done!
+2023-12-14T09:22:15.298Z  info: Fetched all Transaction you have done!
+2023-12-14T09:22:32.030Z  info: Transaction created successfully of Amount 111 as income
+2023-12-14T09:22:34.378Z  info: Fetched all Transaction you have done!
+2023-12-14T09:22:34.402Z  info: Fetched all Transaction you have done!
+2023-12-14T09:22:37.065Z  info: Fetched all Transaction you have done!
+2023-12-14T09:23:05.381Z  info: Transaction created successfully of Amount 111 as income
+2023-12-14T09:23:07.824Z  info: Fetched all Transaction you have done!
+2023-12-14T09:23:07.958Z  info: Fetched all Transaction you have done!
+2023-12-14T09:23:09.756Z  info: Fetched all Transaction you have done!

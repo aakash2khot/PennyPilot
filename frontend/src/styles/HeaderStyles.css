@@ -1,17 +1,62 @@
+
+body{
+  background-image: url('bi.png');
+}
 .navbar {
-  background-color: #6f4e3742 !important;
+  background-color: bg-dark !important;
 }
 .navbar .navbar-brand {
-  color: #6f4e37 !important;
+  color: #ffffff !important;
   font-weight: bold;
-  font-size: 1.5rem;
-}
+  font-size: 1.8rem;
+  font-family: 'Arial', sans-serif; /* Change the font family */
+ } 
 
 .nav-link {
   font-size: 1.2rem;
+  padding-top: 10px;
 }
 
 .navbar h6 {
   margin-top: 0px;
-  margin-right: 20px;
+  margin-right: 9px;
+  color: #ffffff;
+  
 }
+/* Add these styles to your stylesheet */
+
+.custom-btn {
+  padding: 7px 11px; /* Adjust padding as needed */
+  font-size: 17px;   /* Adjust font size as needed */
+  color: black;
+  font-weight: bold;
+  background-color:  rgb(255, 255, 255); /* Bootstrap's btn-danger color */
+  border: 1px solid #534343; /* Matching border color */
+  border-radius: 5px;  /* Adjust border radius as needed */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add smooth transition effect */
+
+  /* Hover effect */
+  &:hover {
+    background-color: #c9302c; /* Darker color on hover */
+  }
+
+  /* Additional styles as needed */
+}
+/* .layout-wrapper{ */
+  /* background-image: url('bi.png');  */
+  /* height: 150% !important; */
+  
+  /* color: red; */
+/* } */
+/* #midd{
+  height: 100% !important;
+} */
+#footer {
+  /* background-color: #082b4d; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 12%;
+}
+
