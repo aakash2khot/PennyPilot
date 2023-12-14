@@ -5,8 +5,8 @@ pipeline{
         CI = 'true'
         registryfrontend = 'ashkt/pennypilot-frontend'
         registrybackend = 'ashkt/pennypilot-backend'
-        // DOCKERHUB_CRED = credentials('CRED_DOCKER')
-        registryCredential = 'DockerHubCred'
+        DOCKERHUB_CREDENTIALS = credentials('DockerHubCred')
+        // registryCredential = 'DockerHubCred'
         dockerimage = ''
     }
     
@@ -18,7 +18,7 @@ pipeline{
                 // credentialsId: 'Credential_Git'
             }
         }
-        stage("Running  Tests"){
+        stage("Running Tests"){
             steps{
                 script{
                 dir('backend') {
@@ -53,7 +53,7 @@ pipeline{
             steps {
                 script{
                 dir('frontend') {
-                    sh '/usr/local/bin/docker login -u "ashkt" -p "ppp"'
+                
                     sh '/usr/local/bin/docker push ' +registryfrontend+':latest'
                 }
             } }
@@ -62,7 +62,7 @@ pipeline{
             steps {
                 script{
                 dir('backend') {
-                    sh '/usr/local/bin/docker login -u "ashkt" -p "ppp"'
+                    sh '/usr/local/bin/docker login -u '+DOCKERHUB_CREDENTIALS_USR+ " -p "+ DOCKERHUB_CREDENTIALS_PSW
                     sh '/usr/local/bin/docker push ' +registrybackend+':latest'
                 } 
             } } 
@@ -77,9 +77,8 @@ pipeline{
         }
         stage('Deploy') {
         steps {
-
             sh '/Users/aakashkhot/Library/Python/3.12/bin/ansible-playbook playbook.yml -i inventory'
-        }
+           }
         }
     }
 }
