@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
 const supertest = require('supertest')
-const app = require('../server')
+const server = require('../server')
+const app=server.app
 const Trans = require('../models/transectionModel')
 const User = require('../models/userModel')
 // const api = supertest(app)
@@ -149,7 +150,6 @@ describe('Transaction', () => {
   })
   
   afterAll(done => {
-    knex.destroy()
     // Closing the DB connection allows Jest to exit successfully.
     mongoose.connection.close()
     done()
