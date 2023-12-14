@@ -1,62 +1,9 @@
 ---
 - name: Deploying Project.
-  # hosts: localhost
-  hosts: remote
+  hosts: localhost
+  # hosts: remote
   vars:
     ansible_python_interpreter: /usr/local/bin/python3
   tasks:
-    # - name: Install Docker Compose
-    #   # become: true
-    #   apt:
-    #     name: docker-compose
-    #     state: present
-    # - name: install docker-compose
-    #   shell: pip install docker-compose
     - name: Build and start containers
       command: "/opt/homebrew/bin/docker-compose -f /Users/aakashkhot/Documents/IIITB_Sem7/PennyPilot/docker-compose.yml up -d"
-    # - name: Start docker service
-    #   service:
-    #     name: docker
-    #     state: started
-    # - name: Pull frontend image
-    #   docker_image:
-    #     name: bsankapal/pennypilot-frontend:latest
-    #     source: pull
-    # - name: Pull backend image
-    #   docker_image:
-    #     name: bsankapal/pennypilot-backend:latest
-    #     source: pull
-    
-    # - name: pull frontend docker image
-    #   shell: /usr/local/bin/docker pull docker.io/bsankapal/pennypilot-frontend:latest
-
-    # - name: pull backend docker image
-    #   shell: /usr/local/bin/docker pull docker.io/bsankapal/pennypilot-backend:latest
-    # - name: install docker-compose
-    #   shell: pip3 install docker-compose
-
-    # - name: deploy Docker Compose stack
-    #   community.docker.docker_compose:
-    #     project_src: /Users/balajibabasahebsankapal/Desktop/PennyPilot
-    #     files:
-    #     - docker-compose.yml
-    # - name: Copy Docker Compose file from host machine
-    #   copy:
-    #     src: ./docker-compose.yml
-    #     dest: /Users/balajibabasahebsankapal/Desktop/PennyPilot/docker-compose.yml
-
-    # # use files parameter to use multiple docker-compose.yml files
-    # - name: deploy Docker Compose stack
-    #   community.docker.docker_compose:
-    #     project_src: /Users/balajibabasahebsankapal/Desktop/PennyPilot
-    #     files:
-    #     - docker-compose.yml
-
-    # - name: Pull Frontend image
-    #   docker_image:
-    #     name: gaparul/sangam-alumniportal-frontend
-    #     source: pull
-    # - name: Pull Backend image
-    #   docker_image:
-    #     name: gaparul/sangam-alumniportal-backend
-    #     source: pull

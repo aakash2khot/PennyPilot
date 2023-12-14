@@ -2,8 +2,6 @@ version: '3'
 services:
   backend:
     build: backend
-      # dockerfile: dockerfile
-      # context: ./backend/
     container_name: backend
     restart: always
     image: ashkt/pennypilot-backend
