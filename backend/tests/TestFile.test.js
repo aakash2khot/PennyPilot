@@ -151,7 +151,7 @@ describe('Transaction', () => {
   
   afterAll(() => {
     // Closing the DB connection allows Jest to exit successfully.
-    ser.close();
+    ser.server.close();
     mongoose.connection.close()
     // done()
   })
