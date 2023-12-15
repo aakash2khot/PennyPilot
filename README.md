@@ -29,7 +29,7 @@ cd backend && npm start
 6. Start the frontend server:
 
 ```bash
-cd frontend && npm run dev
+cd frontend && npm start
 ```
 
 7. Access the application in your web browser at [http://localhost:3000](http://localhost:3000)
