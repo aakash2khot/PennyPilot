@@ -13,9 +13,9 @@ services:
       - ./backend/logs.log:/backend/logs.log
     env_file:
       - ./backend/.env
-    # volumes:
-    #   - ./backend:/backend
-    #   - /backend/node_modules
+    volumes:
+      - ./backend:/backend
+      - /backend/node_modules
     networks:
       - finance
   mongo:
@@ -33,9 +33,9 @@ services:
     image: ashkt/pennypilot-frontend
     ports:
       - '3000:3000'
-    # volumes:
-    #   - ./frontend:/frontend
-    #   - /frontend/node_modules
+    volumes:
+      - ./frontend:/frontend
+      - /frontend/node_modules
     networks:
       - finance
     depends_on:
