@@ -1,5 +1,5 @@
 # PennyPilot
-# Getting started
+## Getting started
 To get started with this project, follow these steps:
 1. Fork this repository
 
